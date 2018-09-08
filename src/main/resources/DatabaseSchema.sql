@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS xyzBank;
+
 CREATE TABLE IF NOT EXISTS `Users` (
   `userId` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `userName` varchar(20) NOT NULL DEFAULT '',
