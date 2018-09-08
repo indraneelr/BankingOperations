@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
 
     public int addUserToBank(BankUser anUser) {
         int userId = 0;
-        if (mandatoryParamsPresent(anUser)) {
+        if (areValidParamsPresent(anUser)) {
             setWalletToUser(anUser);
             userId = userDao.createUser(anUser);
         }
@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
         return anUser;
     }
 
-    private boolean mandatoryParamsPresent(BankUser bankUser) {
+    private boolean areValidParamsPresent(BankUser bankUser) {
         return !(bankUser.getUserName() != null && bankUser.getEmail() != null && !isValidEmail(bankUser.getEmail()));
     }
 

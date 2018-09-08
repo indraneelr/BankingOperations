@@ -14,6 +14,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 public class HibernateConfiguration {
+    
     @Value("${db.driver}")
     private String DRIVER;
 

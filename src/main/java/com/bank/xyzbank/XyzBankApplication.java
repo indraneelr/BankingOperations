@@ -14,15 +14,4 @@ public class XyzBankApplication {
 		SpringApplication.run(XyzBankApplication.class, args);
 	}
 
-//	@Autowired
-//	@PersistenceContext
-//	private EntityManagerFactory entityManagerFactory;
-//
-//	@Bean
-//	public SessionFactory sessionFactory() {
-//		if (entityManagerFactory.unwrap(SessionFactory.class) == null) {
-//			throw new NullPointerException("factory is not a hibernate factory");
-//		}
-//		return entityManagerFactory.unwrap(SessionFactory.class);
-//	}
 }
