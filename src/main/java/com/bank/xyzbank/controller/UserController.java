@@ -16,7 +16,7 @@ public class UserController {
     public String greeting(@RequestParam(value = "name") String name) {
         return "Hello " + name;
     }
-
+//url names should be nouns. Not verbs
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String createUser(@RequestBody BankUser bankUser) {
         int createdUserId = userService.addUserToBank(bankUser);
